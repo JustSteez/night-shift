@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Night Shift — Wall Street closes at 4pm</title>
+  <meta name="description" content="An after-hours desk for Robinhood Stock Tokens. LPs earn the spread while Wall Street sleeps.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23070b1d'/%3E%3Cpath d='M20 7a10 10 0 1 0 5 15A8 8 0 0 1 20 7z' fill='%23f4ebd0'/%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Night Shift home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M20 4a12 12 0 1 0 8 18A10 10 0 0 1 20 4z"/></svg>
+      night shift
+    </a>
+    <nav aria-label="Main">
+      <a href="#play">Try the desk</a>
+      <a href="#how">How it works</a>
+      <a href="#agent">The agent</a>
+      <a href="#risks">Risks</a>
+    </nav>
+    <a class="cta" href="#desk">Desk status <span aria-hidden="true">→</span></a>
+  </header>
+
+  <div class="rail" aria-hidden="true">
+    <span class="rail-time" id="railTime">3:59 PM</span>
+    <div class="rail-track"><div class="rail-fill"></div></div>
+    <svg class="rail-icon" viewBox="0 0 24 24"><path d="M15 2a10 10 0 1 0 7 15A8 8 0 0 1 15 2z"/></svg>
+  </div>
+
+  <main id="top">
+    <!-- THE FILM: real photos, scroll drives the camera -->
+    <div class="film">
+      <div class="scene" aria-hidden="true">
+        <img class="shot" data-shot="0" alt="" fetchpriority="high"
+             src="https://images.unsplash.com/photo-1534469650761-fce6cc26ac0d?w=1920&q=75&auto=format&fit=crop">
+        <img class="shot" data-shot="1" alt="" src="https://images.unsplash.com/photo-1754965929667-41ed49e4a63a?w=1920&q=75&auto=format&fit=crop">
+        <img class="shot" data-shot="2" alt="" src="https://images.unsplash.com/photo-1550850839-8dc894ed385a?w=1920&q=75&auto=format&fit=crop">
+        <img class="shot" data-shot="3" alt="" src="https://images.unsplash.com/photo-1648275913341-7973ae7bc9b3?w=1920&q=75&auto=format&fit=crop">
+        <img class="shot" data-shot="4" alt="" src="https://images.unsplash.com/photo-1605702012553-e954fbde66eb?w=1920&q=75&auto=format&fit=crop">
+        <img class="shot" data-shot="5" alt="" src="https://images.unsplash.com/photo-1583759311999-c8821f61e5b0?w=1920&q=75&auto=format&fit=crop">
+        <img class="shot" data-shot="6" alt="" src="https://images.unsplash.com/photo-1518235506717-e1ed3306a89b?w=1920&q=75&auto=format&fit=crop">
+        <div class="shade"></div>
+        <div class="grain"></div>
+        <div class="flash"></div>
+      </div>
+
+      <div class="chapters">
+        <section class="chapter ch-hero" data-time="3:59 PM" aria-label="Wall Street closes at 4pm">
+          <div class="ch-inner">
+            <span class="stamp">Friday · 3:59 PM · Wall Street</span>
+            <h1 class="mega"><span>Wall Street</span><span class="mega-big">closes</span><span class="mega-right">at 4pm.</span></h1>
+          </div>
+          <div class="scroll-pill" aria-hidden="true">Scroll <span>↓</span></div>
+        </section>
+
+        <section class="chapter ch-right" data-time="4:00 PM">
+          <div class="ch-inner">
+            <span class="stamp">4:00 PM</span>
+            <h2 class="ch-title">Ding.</h2>
+            <p>The closing bell rings. The New York Stock Exchange goes home, and every stock’s price freezes at the last close.</p>
+            <button class="bell" type="button" id="bell"><span aria-hidden="true">🔔</span> Ring the bell</button>
+          </div>
+        </section>
+
+        <section class="chapter ch-left" data-time="6:45 PM">
+          <div class="ch-inner">
+            <span class="stamp">6:45 PM</span>
+            <h2 class="ch-title">The city<br>goes home.</h2>
+            <p>For the next seventeen and a half hours, nobody on Wall Street is quoting Tesla, Nvidia or Apple.</p>
+          </div>
+        </section>
+
+        <section class="chapter ch-center" data-time="11:20 PM">
+          <div class="ch-inner">
+            <span class="stamp">11:20 PM</span>
+            <p class="big-stat" data-count="74">0%</p>
+            <h2 class="ch-title">of stock token trading<br>happens after the bell.</h2>
+            <p>On Robinhood Chain, stock tokens trade 24/7. The market closed. The trading didn’t.</p>
+          </div>
+        </section>
+
+        <section class="chapter ch-right" data-time="1:12 AM">
+          <div class="ch-inner">
+            <span class="stamp">Saturday · 1:12 AM</span>
+            <h2 class="ch-title">Nobody’s<br>home.</h2>
+            <p>No live price. No market maker. One weekend, tokenized HIMS traded <strong class="hot">+112%</strong> above its NYSE close. Whoever bought the top paid for it.</p>
+          </div>
+        </section>
+
+        <section class="chapter ch-hero ch-night" data-time="1:13 AM" aria-label="Night Shift doesn't">
+          <div class="ch-inner">
+            <span class="stamp">Saturday · 1:13 AM</span>
+            <h2 class="mega"><span>Night Shift</span><span class="mega-big">doesn’t.</span></h2>
+            <p class="lede">A vault that quotes stock tokens at the <em>last real close ± a small spread</em>, all night. When pools drift, traders come to the desk, prices come home, and LPs earn the spread.</p>
+          </div>
+        </section>
+
+        <section class="chapter ch-left" data-time="9:30 AM">
+          <div class="ch-inner">
+            <span class="stamp">Monday · 9:30 AM</span>
+            <h2 class="ch-title">The bell rings.<br>Night shift<br>clocks out.</h2>
+            <p>Wall Street reopens, live prices return, the desk closes and LPs keep the spread.</p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- TICKER RIBBON -->
+    <section class="ribbon" aria-label="Example after-hours premiums">
+      <svg viewBox="0 0 1440 260" preserveAspectRatio="none" aria-hidden="true">
+        <path id="ribbonPath" d="M-100 60 C 300 40, 500 230, 900 170 S 1400 40, 1600 120" fill="none"/>
+        <path d="M-100 60 C 300 40, 500 230, 900 170 S 1400 40, 1600 120" class="ribbon-band"/>
+        <text class="ribbon-text"><textPath id="ribbonText" href="#ribbonPath" startOffset="0"></textPath></text>
+      </svg>
+      <p class="ribbon-note">Illustrative after-hours premiums vs last NYSE close</p>
+    </section>
+
+    <!-- PLAYGROUND -->
+    <section id="play" class="play" aria-labelledby="playTitle">
+      <div class="play-head">
+        <span class="eyebrow">Try the desk · Saturday 1:13 AM</span>
+        <h2 id="playTitle" class="section-title">Work one<br>night shift.</h2>
+        <p>The onchain pool has drifted from the real price. Trade with the desk, push the price home, and watch where the money goes.</p>
+      </div>
+
+      <div class="console">
+        <div class="tabs" role="tablist" aria-label="Stock token">
+          <button role="tab" class="tab" data-stock="HIMS" aria-selected="true">HIMS</button>
+          <button role="tab" class="tab" data-stock="TSLA" aria-selected="false">TSLA</button>
+          <button role="tab" class="tab" data-stock="NVDA" aria-selected="false">NVDA</button>
+        </div>
+
+        <div class="prices">
+          <div class="price"><span>Last NYSE close</span><strong id="pClose">—</strong></div>
+          <div class="price price-pool"><span>Onchain pool now</span><strong id="pPool">—</strong><em id="pPrem">—</em></div>
+          <div class="price price-desk"><span id="pDeskLabel">Desk price</span><strong id="pDesk">—</strong></div>
+        </div>
+
+        <label class="ctrl">
+          <span>Trade size <b id="vSize">$5,000</b></span>
+          <input type="range" id="size" min="100" max="10000" step="100" value="5000">
+        </label>
+        <label class="ctrl">
+          <span>Agent’s spread <b id="vSpread">0.50%</b></span>
+          <input type="range" id="spread" min="10" max="1000" step="10" value="50">
+        </label>
+
+        <div class="outcome">
+          <div class="out"><span>You make (arbitrage)</span><strong id="oTrader">—</strong></div>
+          <div class="out out-lp"><span>LPs earn (spread)</span><strong id="oLp">—</strong></div>
+          <div class="out"><span>Pool premium after</span><strong id="oAfter">—</strong></div>
+        </div>
+        <p class="verdict" id="verdict"></p>
+        <p class="fine">Demo with illustrative prices. Same math as the contract: desk price = last close × (1 ± spread).</p>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="how">
+      <h2 class="section-title">Three shifts.<br>One vault.</h2>
+      <ol class="shifts">
+        <li class="shift shift-day">
+          <span class="shift-time">9:30 — 4:00 ET</span>
+          <h3>Day shift</h3>
+          <p>The NYSE is open and prices are live. LPs deposit USDG at NAV and get <code>nsUSDG</code> shares. The desk is closed.</p>
+        </li>
+        <li class="shift shift-night">
+          <span class="shift-time">4:00 — 9:30 ET, weekends, holidays</span>
+          <h3>Night shift</h3>
+          <p>The desk opens. Anyone can buy or sell stock tokens at the <strong>last Chainlink close ± spread</strong>. When pools drift, arbitrageurs trade with the desk and the spread goes to LPs.</p>
+        </li>
+        <li class="shift shift-any">
+          <span class="shift-time">24 / 7</span>
+          <h3>Clock out</h3>
+          <p>Burn your shares any time for a pro-rata slice of everything in the vault: USDG plus stock tokens. No oracle needed.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- AGENT -->
+    <section id="agent" class="agent">
+      <div class="agent-copy">
+        <span class="eyebrow">The AI agent</span>
+        <h2 class="section-title">Runs the desk.<br><span class="strike">Touches the money.</span></h2>
+        <p>An AI agent watches onchain pools against the real close and tunes the desk. The contract keeps it in a box.</p>
+      </div>
+      <div class="ledger">
+        <div class="ledger-col">
+          <h3>Can</h3>
+          <ul>
+            <li>Set the spread between 0.1% and 10%</li>
+            <li>Pause the desk when news breaks</li>
+          </ul>
+        </div>
+        <div class="ledger-col ledger-cant">
+          <h3>Can’t</h3>
+          <ul>
+            <li>Move vault funds</li>
+            <li>Unpause the desk</li>
+            <li>Raise exposure caps</li>
+            <li>List new stocks</li>
+          </ul>
+        </div>
+      </div>
+      <dl class="limits">
+        <div><dt>30%</dt><dd>max NAV in one stock</dd></div>
+        <div><dt>5 days</dt><dd>max price age</dd></div>
+        <div><dt>24h</dt><dd>share lock after deposit</dd></div>
+        <div><dt>0</dt><dd>admin withdraw functions</dd></div>
+      </dl>
+    </section>
+
+    <!-- LIVE DESK STATUS -->
+    <section id="desk" class="desk" aria-live="polite">
+      <span class="eyebrow">Live, computed from NYSE hours</span>
+      <div class="desk-card">
+        <div class="desk-state"><span class="dot"></span><span id="deskState">Checking…</span></div>
+        <p class="desk-count"><span id="deskCount">--:--:--</span></p>
+        <p class="desk-next" id="deskNext"></p>
+        <p class="desk-ny">New York time <span id="nyTime">--:--</span></p>
+      </div>
+      <p class="fine">Exchange holidays are set onchain by the owner and aren’t shown here.</p>
+    </section>
+
+    <!-- RISKS -->
+    <section id="risks" class="risks">
+      <h2 class="section-title">Read this before<br>you clock in.</h2>
+      <div class="risk-grid">
+        <article><h3>Weekend news gap</h3><p>The desk quotes Friday’s close. If big news breaks on Saturday, traders can pick off the vault before Monday. Spreads, pauses and caps limit it. LPs carry it.</p></article>
+        <article><h3>USDG peg</h3><p>Prices assume 1 USDG = $1.</p></article>
+        <article><h3>Issuer controls</h3><p>Robinhood can freeze stock tokens, including ones held by the vault.</p></article>
+        <article><h3>Not for US persons</h3><p>Stock tokens are restricted in the US and other jurisdictions.</p></article>
+      </div>
+      <p class="fine">Testnet demo. Not audited. Nothing here is financial advice.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-big">Clock in.</p>
+    <p class="footer-meta">Night Shift · Built on Robinhood Chain · Testnet · Photos via <a href="https://unsplash.com" rel="noopener">Unsplash</a></p>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
